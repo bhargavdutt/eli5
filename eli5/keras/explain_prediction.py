@@ -5,18 +5,19 @@ if TYPE_CHECKING:
     import PIL # type: ignore
 
 import numpy as np # type: ignore
-import keras # type: ignore
-import keras.backend as K # type: ignore
-from keras.models import Model # type: ignore
-from keras.layers import Layer # type: ignore
-from keras.layers import (  # type: ignore
+import tensorflow as tf
+import tensorflow.keras # type: ignore
+import tensorflow.keras.backend as K # type: ignore
+from tensorflow.keras.models import Model # type: ignore
+from tensorflow.keras.layers import Layer # type: ignore
+from tensorflow.keras.layers import (  # type: ignore
     Conv2D,
     MaxPooling2D,
     AveragePooling2D,
     GlobalMaxPooling2D,
     GlobalAveragePooling2D,
 )
-from keras.preprocessing.image import array_to_img # type: ignore
+from tensorflow.keras.preprocessing.image import array_to_img # type: ignore
 
 from eli5.base import Explanation, TargetExplanation
 from eli5.explain import explain_prediction
