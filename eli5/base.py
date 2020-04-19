@@ -46,8 +46,8 @@ class Explanation(object):
         """ HTML formatting for the notebook.
         """
         from eli5.formatters import fields
-        from eli5.formatters.html import format_as_html
-        return format_as_html(self, force_weights=False, show=fields.WEIGHTS)
+        from eli5.formatters.as_dataframe import format_as_dataframe
+        return format_as_dataframe(self)
 
 
 @attrs
